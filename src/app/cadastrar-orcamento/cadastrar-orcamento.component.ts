@@ -63,4 +63,8 @@ export class CadastrarOrcamentoComponent implements OnInit {
     };
     this.total_orcamento = this.orcamentos.calcular(orcamento);
   }
+  
+  removerMobilia(i){
+    this.mobilias.splice(i,1);
+  }
 }
